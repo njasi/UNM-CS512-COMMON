@@ -24,6 +24,10 @@ body {
   line-height: 1.5;
 }
 
+footer{
+  padding:2rem;
+}
+
 code {
   background: var(--surface);
   color: var(--accent);
