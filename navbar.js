@@ -17,6 +17,10 @@ const FALLBACK_NAV_CONTENT = {
       link: "https://cs512.njasi.com/homework/hw3",
     },
     { label: "HW4: BVH Loader", link: "https://cs512.njasi.com/homework/hw4" },
+    {
+      label: "HW5: Primitive Surfers",
+      link: "https://cs512.njasi.com/homework/hw5",
+    },
   ],
   projects: [
     {
@@ -117,7 +121,6 @@ function navItem(label, link) {
  */
 function populateDropdown(key, id, navContent = FALLBACK_NAV_CONTENT) {
   const menu = document.getElementById(id);
-  console.log(id, menu);
   navContent[key].forEach((i) =>
     menu.appendChild(dropdownItem(i.label, i.link)),
   );
