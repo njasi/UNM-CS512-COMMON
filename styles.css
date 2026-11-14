@@ -375,3 +375,52 @@ a:hover {
     transform: rotate(360deg);
   }
 }
+
+
+
+/* BEGIN D-PAD STYLES */
+
+/* dont bother on non touch devices */
+@media (any-pointer: fine) {
+  .canvas-dpad {
+    display: none !important;
+  }
+}
+
+.canvas-dpad {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 100;
+  display: grid;
+  grid-template-columns: repeat(3, 52px);
+  grid-template-rows: repeat(2, 52px);
+  gap: 5px;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.canvas-dpad button {
+  border: 1px solid var(--accent);
+  border-radius: 12px;
+  background: var(--surface);
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent;
+  backdrop-filter: blur(5px);
+  opacity: 0.5;
+
+  transition: all;
+  transition-duration: 100ms;
+}
+
+.canvas-dpad button.pressed {
+  border: 2px solid var(--accent);
+  border-radius: 12px;
+  opacity: 0.75;
+}
+
+/* END DPAD STYLES */
