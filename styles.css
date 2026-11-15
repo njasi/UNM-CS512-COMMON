@@ -273,8 +273,7 @@ a:hover {
   gap: 1rem;
   justify-content: left;
   align-items: center;
-  margin-top: 1rem;
-  padding: 1rem;
+  /* margin-top: 1rem; */
   background: var(--surface);
 }
 
@@ -422,3 +421,40 @@ a:hover {
 }
 
 /* END DPAD STYLES */
+
+.form-control {
+  background: var(--background) !important;
+  color: var(--accent) !important;
+  border-color: var(--accent) !important;
+}
+
+.controls .nav-link {
+  color: var(--muted) !important;
+  border-radius: 0 0 5px 5px !important;
+  border-top: none !important;
+
+  outline: none !important;
+}
+
+.controls .nav-link.active {
+  color: var(--accent) !important;
+  background-color: var(--background) !important;
+  border-color: var(--accent) !important;
+}
+
+.nav-tabs {
+  border-bottom: none !important;
+  /* 1px solid var(--accent) !important; */
+}
+
+.tab-pane {
+  margin-top: 0.5rem;
+}
+
+.form-control-plaintext {
+  color: var(--text) !important;
+}
+
+#editor-panel-body {
+  width: 100%;
+}
