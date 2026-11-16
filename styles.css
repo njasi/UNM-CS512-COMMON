@@ -458,3 +458,23 @@ a:hover {
 #editor-panel-body {
   width: 100%;
 }
+
+#editor-panel-body table tr:nth-child(2),
+#editor-panel-body table th {
+  background-color: var(--background);
+}
+
+#editor-panel-body table {
+  width: 90%;
+  text-align: center;
+}
+
+#editor-panel-body table,
+#editor-panel-body th,
+#editor-panel-body td {
+  border: 1px solid var(--accent);
+  border-collapse: collapse;
+}
+#editor-panel-body td{
+  padding: 6px;
+}
