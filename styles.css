@@ -478,3 +478,21 @@ a:hover {
 #editor-panel-body td{
   padding: 6px;
 }
+
+#editor-panel-body .texture-source-table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+#editor-panel-body .texture-source-table th,
+#editor-panel-body .texture-source-table td {
+  overflow-wrap: anywhere;
+}
+
+#editor-panel-body .texture-source-table img,
+#editor-panel-body .texture-source-table canvas,
+#editor-panel-body .texture-source-table video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
